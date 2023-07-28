@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.scss">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light dark fixed-top">
+        <a class="navbar-brand" href="#">FOOT<span><em>quiz</em></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link link-css" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navis" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Betting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Livescore</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">competitions</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    <h1>Football Quiz</h1>
+    <div class="Quiz-container">
+        <h2>Answer the following questions</h2>
+        <h3>Question 1</h3>
+        <p class="question-paragraphs">Who is the captain of Inter Miami?</p>
+        <button onclick="answerQuestion1()" class=" clickToAnswer-checkAnswer-btns">Click to answer</button>
+        <button onclick="displayAnswer1()" class=" clickToAnswer-checkAnswer-btns">Check answer</button>
+        <button onclick="Reset1()" class="Reset-btn buttons-display">Reset</button>
+        <button onclick="window.location.reload()" class="Reset-btn buttons-display">Reset All</button>
+        <p class="hidden-answer-text"><strong>Answer:</strong>Lionel Messi</p>
+        <P class="hidden-correct-text"><strong>correct✔</strong></P>
+       
+        <h3>Question 2</h3>
+        <p class="question-paragraphs">Who is the captain of Arsenal football club?</p>
+        <button onclick="answerQuestion2()" class="clickToAnswer-checkAnswer-btns">Click to answer</button>
+        <button onclick="displayAnswer2()" class="clickToAnswer-checkAnswer-btns">Check answer</button>
+        <button onclick="Reset2()" class="Reset-btn buttons-display">Reset</button>
+        <button onclick="window.location.reload()"class="Reset-btn buttons-display">Reset All</button>
+        <p class="hidden-answer-text"><strong>Answer:</strong>Martin Odegard</p>
+        <P class="hidden-correct-text"><strong>correct✔</strong></P>
+       
+        <h3>Question 3</h3>
+        <p class="question-paragraphs">Chelsea football club was founded in what year?</p>
+        <button onclick="answerQuestion3()" class="clickToAnswer-checkAnswer-btns">Click to answer</button>
+        <button onclick="displayAnswer3()" class="clickToAnswer-checkAnswer-btns">Check answer</button>
+        <button onclick="Reset3()" class="Reset-btn ">Reset</button>
+        <button onclick="window.location.reload()" class="Reset-btn">Reset All</button>
+        <p class="hidden-answer-text"><strong>Answer:</strong>1905</p>
+        <P class="hidden-correct-text"><strong>correct✔</strong></P>
+         
+        <h3>Question 4</h3>
+        <p class="question-paragraphs">Which brazilian footballer did barcelona sign from PSG in 2003?</p>
+        <button onclick="answerQuestion4()" class="clickToAnswer-checkAnswer-btns">Click to answer</button>
+        <button onclick="displayAnswer4()" class="clickToAnswer-checkAnswer-btns">Check answer</button>
+        <button onclick="Reset4()" class="Reset-btn ">Reset</button>
+        <button onclick="window.location.reload()" class="Reset-btn">Reset All</button>
+        <p class="hidden-answer-text"><strong>Answer:</strong>Ronaldinho Gaúcho</p>
+        <P class="hidden-correct-text"><strong>correct✔</strong></P>
+     
+     
+
+
+    </div>
+    <div class="image-text-visibility-hidden-container">
+        <div class="messi-image-text-container">
+    <img class="messi-image fadeIn-image" src="css/images/leo.jpg" alt="Messi-image">
+    <p class="empty-text">Lionel Andrés Messi, also known as Leo Messi, is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team.He is regarded by many as the greatest of all time.</p>
+</div>
+<div class="odegard-image-text-container">
+    <img class="odegard-image fadeIn-image" src="css/images/odegards.jpg" alt="Messi-image">
+    <p class="empty-text">Martin Ødegaard is a Norwegian professional footballer who plays as a midfielder for and captains both Premier League club Arsenal and the Norway national team. Considered one of the best midfielders in the world, he is known for his technique, dribbling ability, vision and range of passing.</p>
+</div>
+<div class="chelsea-image-text-container">
+    <img class="chelsea-image fadeIn-image" src="css/images/chelsea.jpg" alt="Messi-image">
+    <p class="empty-text">Chelsea Football Club is an English professional football club based in Fulham, West London. Founded in 1905, they play their home games at Stamford Bridge. The club competes in the Premier League, the top division of English football. "</p>
+</div>
+<div class="ronaldinho-image-text-container">
+    <img class="ronaldinho-image fadeIn-image" src="css/images/dinho.jpg" alt="Messi-image">
+    <p class="empty-text">Ronaldo de Assis Moreira, commonly known as Ronaldinho Gaúcho or simply Ronaldinho, is a Brazilian retired professional footballer who played mostly as an attacking midfielder, but was also deployed as a winger.Widely regarded as the greatest player of all time "</p>
+</div>
+    
+</div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
